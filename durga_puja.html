@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+
+        }
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        }
+        label.logo{
+            font-size: 45px;
+            float: left;
+            position: relative;
+
+
+
+        }
+        
+        @keyframes animate{
+            0%,10%,100%{
+                width: 0;
+            }
+            70%{
+                width: 100%;
+            }
+        }
+        nav{
+            background: rgb(212, 199, 14);
+            height: 100px;
+            width: 100%;
+
+        }
+       
+        nav ul li{
+            display: inline-block;
+             padding-top: 20px;
+             padding-left:100px;
+        }
+        nav ul li a{
+            font-size: 35px ;
+            font-weight: 500;
+            
+        }
+        nav ul li  :hover{
+            background: rgb(245, 243, 242);
+            
+        }
+        a.active,a.hover{
+            background: lightgreen;
+            transition: 5s;
+        }
+        nav ul li a input{
+            font-size: 900px;
+        }
+        input.in{
+            font-size: 30px;
+        }
+        .header{
+           
+         
+            background-image: url('image2.jpg');
+            height:820px;
+            background-color: coral;
+            align-content:stretch;
+            background-repeat: no-repeat;
+            padding-left: 50px;
+            animation: slider 9s infinite linear;
+            box-shadow: 1px 2px 10px 5px,white;
+            background-size: 100% 100%;
+
+            
+
+        }
+        @keyframes slider{
+            0%{background-image: url('image1.jpg');}
+            75%{background-image: url('image2.jpg');}
+
+        }
+        div.t{
+            background: gold;
+        }
+        h3{
+            background-color: gold;
+            
+            font-size: 55px;
+            position: relative;
+            color:gold;
+            -webkit-text-stroke: 0.3vw, black;
+        }
+        h3::before{
+            content:attr(data-text);
+            position: absolute;
+           
+            padding-left:0;
+            width:0;
+            height: 100%;
+            
+            
+            color: rgb(64, 14, 243);
+            overflow: hidden;
+            animation: animate 9s infinite linear;
+            -webkit-text-stroke: .3vw,black;
+
+
+        }
+        @keyframes animate{
+            0%,10%,100%{
+                width: 0;
+            }
+            70%,90%{
+                width: 100%;
+            }
+        }
+        #suruchi{
+            font-size: 55px;
+            padding-left: 1030px;
+            background-color: gold;
+            height:100%;
+            width: 100%;
+        }
+        #suruchi_image{
+            height:100%;
+            width:100%;
+        }
+
+
+
+
+
+        
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <nav>
+       
+
+        <label class="logo">Durga Puja</label>
+        
+        <ul>
+            <li><a class="link" href="#">HOME</a></li>
+            <li><a class="link" href="#">SEARCH</a><input  class= "in" type="text"></li>
+            <li><a class="link" href="https://www.facebook.com/arnab.goswami.94043/">CONTACT US</a></li>
+
+        </ul>
+    </nav>
+    <div class="header">
+        
+    </div>
+  
+<div class="t">
+    <h3 data-text="HAPPY PUJA">HAPPY PUJA</h3>
+</div>
+<div>
+    <h5><a id="suruchi" href="http://www.suruchisangha.com/#">SURUCHI SANGHA</a></h5>
+    <img  id="suruchi_image"src="image3.jpg" alt="">
+</div>
+    
+    
+    
+</body>
+</html>
